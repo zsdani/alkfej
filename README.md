@@ -6,7 +6,7 @@ Neptun kód és jelszó beírása után hallgatóként vagy tanárként be tudun
 
 
 
-<font size="20">1. Tagok által elérhető funkciók</font>
+<h3>1. Tagok által elérhető funkciók</h3>
 
 <p>Diákként:</p>
 <ul>
@@ -30,7 +30,8 @@ Neptun kód és jelszó beírása után hallgatóként vagy tanárként be tudun
    <li>a bejelentkezési oldal megtekintése</li>
 </ul>
 
-2.  Funkcionális elvárások
+<h3>2.  Funkcionális elvárások</h3>
+
 <ul>
    <li>Belépés</li>
    <li>tanulók ki listázása tárgyanként</li>
@@ -38,8 +39,7 @@ Neptun kód és jelszó beírása után hallgatóként vagy tanárként be tudun
   <li>saját tanított tárgyak ki listázása</li>
 </ul>
 ·               
-·        
-3. Nem funkcionális elvárások
+<h3>3. Nem funkcionális elvárások</h3>       
 <ul>
    <li>Felhasználóbarát, egyszerű, letisztult felület</li>
    <li>Jelszó Neptun kód páros biztonságos tárolása</li>
@@ -47,8 +47,7 @@ Neptun kód és jelszó beírása után hallgatóként vagy tanárként be tudun
 </ul>
 
 
-
-4. Szerepkörök
+<h3>4. Szerepkörök</h3>
 <ul>
    <li>vendég: nem rendelkezik belépéshez szükséges adatokkal, csak a belépő felületet tudja megtekinteni.</li>
    <li>diák: rendelkezik belépéshez szükséges adatokkal, saját adatait tudja megtekinteni és módosítani, illetve tárgyat felvenni, leadni.</li>
@@ -57,11 +56,12 @@ Neptun kód és jelszó beírása után hallgatóként vagy tanárként be tudun
 </ul>
 
 
-
-5. Szakterületi fogalomjegyzék
+<h3>5. Szakterületi fogalomjegyzék</h3>
 <ul>
    <li>kredit: egy szám, ami a tárgy nehézségének függvényében egyre nagyobb</li>
 </ul>
+
+
 
 
 
