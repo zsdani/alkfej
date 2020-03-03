@@ -38,7 +38,7 @@ Neptun kód és jelszó beírása után hallgatóként vagy tanárként be tudun
    <li>saját felvett tárgyak ki listázása</li>
   <li>saját tanított tárgyak ki listázása</li>
 </ul>
-·               
+              
 <h3>3. Nem funkcionális elvárások</h3>       
 <ul>
    <li>Felhasználóbarát, egyszerű, letisztult felület</li>
@@ -46,13 +46,11 @@ Neptun kód és jelszó beírása után hallgatóként vagy tanárként be tudun
    <li>logikus menü elrendezés</li>
 </ul>
 
-
 <h3>4. Szerepkörök</h3>
 <ul>
    <li>vendég: nem rendelkezik belépéshez szükséges adatokkal, csak a belépő felületet tudja megtekinteni.</li>
    <li>diák: rendelkezik belépéshez szükséges adatokkal, saját adatait tudja megtekinteni és módosítani, illetve tárgyat felvenni, leadni.</li>
    <li>tanár: rendelkezik belépéshez szükséges adatokkal, saját adatait tudja megtekinteni és módosítani, illetve tárgyat hozzáadni az adatbázishoz, törölni.</li>
-  <li></li>
 </ul>
 
 
