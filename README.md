@@ -60,6 +60,30 @@ Neptun kód és jelszó beírása után hallgatóként vagy tanárként be tudun
 </ul>
 
 
+<h3>6. Fejlesztőkörnyezet</h3>
+Lokális IDE: Visual Studio Code
+
+Github account nem szükséges, de hasznos
+Hozzunk létre egy munkakönyvtárat
+node.js-el töltsük le az adonisJS-t
+adonissJS hozzuk létre a fejlesztő környezetet
+Ezen a munkaterületen elkezdhetünk kódolni
+Miután végeztünk a munkával elmenthetjük lokálisan vagy github-ra
+Githubra először a Visual Studio-n belül a Stage All-al kijelöljük a pusholni kívánt fájlokat majd commit-áljuk őket. Ezután a Push paranccsal föltölthetjük a github accountunkra
+
+<h3>7. Könyvtárstruktúra</h3>
+
+
+<ul>
+   <li></li>
+   <li></li>
+   <li></li>
+</ul>
+
+
+
+
+
 
 
 
