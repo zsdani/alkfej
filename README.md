@@ -62,6 +62,7 @@ Neptun kód és jelszó beírása után hallgatóként vagy tanárként be tudun
 
 
 <h3>Adatbázis terv:</h3>
+
 ![entities](https://user-images.githubusercontent.com/47753407/78537469-d3a64600-77ef-11ea-9cc4-3181fa43464c.png)
 
 
