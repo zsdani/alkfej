@@ -1,15 +1,20 @@
 package hu.elte.NeptunApp.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import hu.elte.NeptunApp.entities.enums.Role;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "User")
 public class User {
-
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,10 +27,10 @@ public class User {
         private String name;
 
         @Enumerated(EnumType.STRING)
-        //private PersonRole role;
+        private Role role;
 
         @Column
-        private int sum_credit;
+        private Integer sum_credit;
 
         @Column
         private String e_mail;
@@ -33,6 +38,8 @@ public class User {
         @ManyToMany
         @JoinTable
         private List<Subject> subjects;
+
+
 }
 
 
