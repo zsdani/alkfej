@@ -75,7 +75,7 @@ Githubra először a Visual Studio-n belül a Stage All-al kijelöljük a pushol
 
 
 <ul>
-   <li></li>
+   <li>asdasd</li>
    <li></li>
    <li></li>
 </ul>
