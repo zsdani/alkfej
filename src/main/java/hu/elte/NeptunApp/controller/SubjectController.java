@@ -1,10 +1,11 @@
 package hu.elte.NeptunApp.controller;
 
+
 import hu.elte.NeptunApp.entities.Subject;
 import hu.elte.NeptunApp.entities.User;
 import hu.elte.NeptunApp.repository.SubjectRepository;
 
-
+import java.lang.Integer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -27,21 +28,25 @@ public class SubjectController {
     public ResponseEntity<Subject> get(@PathVariable Integer id) {
         Optional<Subject> subject = subjectRepository.findById(id);
         if (subject.isPresent()) {
+            subject.get().setNumberOfUsers(subject.get().getUsers().size());
             return ResponseEntity.ok(subject.get());
         } else {
             return ResponseEntity.notFound().build();
         }
     }
-    /*
-    @GetMapping("/subjects/{id}/users")
-    public Object findPersonsById(@PathVariable Integer id) {
+
+    @GetMapping("/{id}/users")
+    public ResponseEntity<Iterable<User>> getAllUsersBySubject(@PathVariable Integer id) {
         Optional<Subject> byId = subjectRepository.findById(id);
         if (byId.isPresent()) {
-            return byId.get().getUsers();
+            //System.out.println(byId.get().getUsers().size());
+            return ResponseEntity.ok(byId.get().getUsers());
         } else {
             return ResponseEntity.notFound().build();
         }
-    }*/
+    }
+
+
 
     @PostMapping("")
     public ResponseEntity<Subject> post(@RequestBody Subject subject) {

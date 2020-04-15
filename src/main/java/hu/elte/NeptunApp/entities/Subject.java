@@ -1,47 +1,52 @@
 package hu.elte.NeptunApp.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
 
 import javax.persistence.*;
 import java.util.List;
 
-@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "Subject")
+@Entity
+@EqualsAndHashCode
 public class Subject {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column
+    @Column(unique = true)
     private String name;
 
-    @Column
+    @Column(nullable = false)
     private String code;
 
-    @Column
+    @Column(nullable = false)
     private String description;
 
-    @Column
+    @Column(nullable = false)
     private Integer credit;
 
     @Column
-    private Integer mark;
+    private Integer numberOfUsers;
+
 
     @ManyToMany(mappedBy = "subjects")
     @JsonIgnore
     private List<User> users;
 
-    @OneToMany(mappedBy = "subject")
+    @ManyToOne(cascade = CascadeType.PERSIST, optional = false)
+    @JoinColumn
     @JsonIgnore
-    private List<Exam> exams;
+    private Building building;
+
+
 
 }

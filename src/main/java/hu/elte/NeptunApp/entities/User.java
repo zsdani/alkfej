@@ -1,9 +1,13 @@
 package hu.elte.NeptunApp.entities;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import hu.elte.NeptunApp.entities.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
@@ -13,7 +17,9 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "User")
+@EqualsAndHashCode
+@Table(name = "Users")
+//@JsonIgnoreProperties({"Role", "Sum credit", "E-mail address"})
 public class User {
 
         @Id
@@ -23,7 +29,7 @@ public class User {
         @Column(unique = true)
         private String username;
 
-        @Column
+        @Column(nullable = false)
         private String name;
 
         @Enumerated(EnumType.STRING)
@@ -32,11 +38,18 @@ public class User {
         @Column
         private Integer sum_credit;
 
-        @Column
+        @Column(nullable = false)
         private String e_mail;
 
-        @ManyToMany
+        @ManyToMany(fetch = FetchType.LAZY, cascade =
+                {
+                        CascadeType.DETACH,
+                        CascadeType.MERGE,
+                        CascadeType.REFRESH,
+                        CascadeType.PERSIST
+                })
         @JoinTable
+        @JsonIgnore
         private List<Subject> subjects;
 
 
