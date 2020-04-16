@@ -42,10 +42,11 @@ public class Subject {
     @JsonIgnore
     private List<User> users;
 
-    @ManyToOne(cascade = CascadeType.PERSIST, optional = false)
+    @ManyToOne(targetEntity = Building.class)
     @JoinColumn
     @JsonIgnore
     private Building building;
+
 
 
 

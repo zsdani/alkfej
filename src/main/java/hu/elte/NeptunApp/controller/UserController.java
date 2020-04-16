@@ -63,8 +63,8 @@ public class UserController {
             Subject newSubject = subjectRepository.save(subject);
             user.getSubjects().add(newSubject);
             user.setSum_credit(user.getSum_credit() + newSubject.getCredit());
-            userRepository.save(user);  // have to trigger from the @JoinTable side
-            newSubject.setNumberOfUsers(newSubject.getNumberOfUsers()+1);
+            userRepository.save(user);
+            newSubject.setNumberOfUsers(newSubject.getNumberOfUsers() + 1);
             subjectRepository.save(newSubject);
             return ResponseEntity.ok(user);
         } else {
