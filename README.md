@@ -61,11 +61,44 @@ Neptun kód és jelszó beírása után hallgatóként vagy tanárként be tudun
 
 
 
-<h3>Adatbázis terv:</h3>
+<h3>6. Adatbázis terv:</h3>
 
 ![entities](https://user-images.githubusercontent.com/47753407/78537469-d3a64600-77ef-11ea-9cc4-3181fa43464c.png)
 
+<h3>7. Fejlesztőkörnyezet: InteliJ</h3>
+Github account nem szükséges, de hasznos
+Hozzunk létre egy munkakönyvtárat
+node.js-el töltsük le az adonisJS-t
+adonissJS hozzuk létre a fejlesztő környezetet
+Ezen a munkaterületen elkezdhetünk kódolni
+Miután végeztünk a munkával elmenthetjük lokálisan vagy github-ra
+Githubrara úgy tudod commitolni, hogy job felső részen rámész a zöld nyilra, majd a megjelenő ablaknál kiválasztod a commitolni kívánt fájlokat. Pusholni meg a kék nyilra való kattintás után lehet.
 
+<h3>8. Könyvtárstruktúra</h3>
+
+Controllers
+<ul>
+   <li>ExamController</li>
+   <li>SubjectController</li>
+   <li>UserController</li>
+</ul>
+Models
+<ul>
+   <li>User</li>
+   <li>Exam</li>
+   <li>Subject</li>
+</ul>
+
+WebSecurityConfig
+
+<h3>9. Végpontok</h3>
+<ul>
+   <li>GET  /login bejelentkezés </li>
+   <li>GET /users  felhasználok kilistázása</li>
+   <li>GET /user/id/  felhasználó információi   li>
+   <li>GET /subjects  tárgyak kilistázása</li>
+   <li>GET /exams  vizsgák kilistázása</li>
+</ul>
 
 
 
