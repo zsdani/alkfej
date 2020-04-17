@@ -99,6 +99,9 @@ Neptun kód és jelszó beírása után hallgatóként vagy adminként be tudunk
    <li>DELETE /buildings/:id Épület törlése</li>
 </ul>
 
+<h3>Szekvencia diagram</h3>
+![neptunapp](https://user-images.githubusercontent.com/47753407/79596514-0221fc00-80e1-11ea-93fe-890b7932fecb.png)
+
 
 
 <h3>Fejlesztői környezet</h3>
