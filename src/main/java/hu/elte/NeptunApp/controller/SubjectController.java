@@ -6,6 +6,8 @@ import hu.elte.NeptunApp.entities.User;
 import hu.elte.NeptunApp.repository.SubjectRepository;
 
 import java.lang.Integer;
+
+import hu.elte.NeptunApp.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +21,9 @@ public class SubjectController {
     @Autowired
     private SubjectRepository subjectRepository;
 
+    @Autowired
+    private UserRepository userRepository;
+
     @GetMapping("")
     public ResponseEntity<Iterable<Subject>> getAll() {
         return ResponseEntity.ok(subjectRepository.findAll());
@@ -28,7 +33,6 @@ public class SubjectController {
     public ResponseEntity<Subject> get(@PathVariable Integer id) {
         Optional<Subject> subject = subjectRepository.findById(id);
         if (subject.isPresent()) {
-            subject.get().setNumberOfUsers(subject.get().getUsers().size());
             return ResponseEntity.ok(subject.get());
         } else {
             return ResponseEntity.notFound().build();
@@ -39,14 +43,11 @@ public class SubjectController {
     public ResponseEntity<Iterable<User>> getAllUsersBySubject(@PathVariable Integer id) {
         Optional<Subject> byId = subjectRepository.findById(id);
         if (byId.isPresent()) {
-            //System.out.println(byId.get().getUsers().size());
             return ResponseEntity.ok(byId.get().getUsers());
         } else {
             return ResponseEntity.notFound().build();
         }
     }
-
-
 
     @PostMapping("")
     public ResponseEntity<Subject> post(@RequestBody Subject subject) {
@@ -69,6 +70,12 @@ public class SubjectController {
     public ResponseEntity delete(@PathVariable Integer id) {
         Optional<Subject> oSubject = subjectRepository.findById(id);
         if (oSubject.isPresent()) {
+            Subject subject = oSubject.get();
+            for(User u : subject.getUsers()) {
+                u.removeSubject(subject);
+                u.setSum_credit(u.getSum_credit() - oSubject.get().getCredit());
+                userRepository.save(u);
+            }
             subjectRepository.deleteById(id);
             return ResponseEntity.ok().build();
         } else {

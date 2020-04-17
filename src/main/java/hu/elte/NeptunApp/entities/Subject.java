@@ -34,18 +34,15 @@ public class Subject {
     @Column(nullable = false)
     private Integer credit;
 
-    @Column
-    private Integer numberOfUsers;
-
-
     @ManyToMany(mappedBy = "subjects")
     @JsonIgnore
     private List<User> users;
 
-    @ManyToOne(cascade = CascadeType.PERSIST, optional = false)
+    @ManyToOne(targetEntity = Building.class)
     @JoinColumn
     @JsonIgnore
     private Building building;
+
 
 
 

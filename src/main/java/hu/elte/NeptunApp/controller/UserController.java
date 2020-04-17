@@ -63,8 +63,7 @@ public class UserController {
             Subject newSubject = subjectRepository.save(subject);
             user.getSubjects().add(newSubject);
             user.setSum_credit(user.getSum_credit() + newSubject.getCredit());
-            userRepository.save(user);  // have to trigger from the @JoinTable side
-            newSubject.setNumberOfUsers(newSubject.getNumberOfUsers()+1);
+            userRepository.save(user);
             subjectRepository.save(newSubject);
             return ResponseEntity.ok(user);
         } else {
@@ -88,10 +87,6 @@ public class UserController {
     public ResponseEntity delete(@PathVariable Integer id) {
         Optional<User> oUser = userRepository.findById(id);
         if (oUser.isPresent()) {
-            for(Subject s : oUser.get().getSubjects()) {
-                s.setNumberOfUsers(s.getNumberOfUsers() - 1);
-                subjectRepository.save(s);
-            }
             userRepository.deleteById(id);
             System.out.println("User deleted");
             return ResponseEntity.ok().build();

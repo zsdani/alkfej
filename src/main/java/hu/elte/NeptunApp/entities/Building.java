@@ -1,6 +1,7 @@
 package hu.elte.NeptunApp.entities;
 
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -8,6 +9,7 @@ import lombok.NoArgsConstructor;
 
 
 import javax.persistence.*;
+
 import java.util.List;
 
 @Data
@@ -28,7 +30,7 @@ public class Building {
     @Column(nullable = false)
     private Integer floors;
 
-
-    @OneToMany(mappedBy = "building", orphanRemoval = true)
+    @OneToMany(mappedBy = "building", targetEntity = Subject.class, cascade = CascadeType.ALL)
     private List<Subject> subjectList;
+
 }
