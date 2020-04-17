@@ -68,7 +68,7 @@ Neptun kód és jelszó beírása után hallgatóként vagy adminként be tudunk
 ![entities](https://user-images.githubusercontent.com/47753407/79592394-3b0aa280-80da-11ea-9c29-c328260ec778.png)
 
 
-<h3>Végpontok</h3y
+<h3>Végpontok</h3>
 <ul>
    <li> GET / Főoldal</li> 
    <li>GET /login Bejelentkező oldal</li>
@@ -77,7 +77,7 @@ Neptun kód és jelszó beírása után hallgatóként vagy adminként be tudunk
    
    <li>GET /persons Felhasználók kilistázása</li>
    <li>GET /persons/:id Felhasználó adatainak megjelenítése</li>
-   <li>GET /persons/:id/subjects Felhasználóhoz tartozó tárgyak listázása
+   <li>GET /persons/:id/subjects Felhasználóhoz tartozó tárgyak listázása</li>
    <li>PUT /persons/:id Felhasználó módosítása</li>
    <li>POST /persons Új Felhasználó felvétele</li>
    <li>POST /persons/:id/subjects Tantárgy felvétele felhasználóhoz</li>
@@ -100,6 +100,8 @@ Neptun kód és jelszó beírása után hallgatóként vagy adminként be tudunk
 </ul>
 
 <h3>Szekvencia diagram</h3>
+
+
 ![neptunapp](https://user-images.githubusercontent.com/47753407/79596514-0221fc00-80e1-11ea-93fe-890b7932fecb.png)
 
 
@@ -113,6 +115,8 @@ Használt technológiák: JAVA Spring, hibernate, Maven, H2 Database, Lombok, Sp
 </ul>
     
 <h3>Könyvtárstruktúra:</h3>
+
+
 ![konyvtar](https://user-images.githubusercontent.com/47753407/79596229-79a35b80-80e0-11ea-9c95-9946a8226c47.png)
     
     
