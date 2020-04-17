@@ -12,8 +12,8 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Configuration
-@EnableWebSecurity
-@EnableGlobalMethodSecurity(prePostEnabled = true)
+//@EnableWebSecurity
+//@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
@@ -23,10 +23,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .csrf().disable()
                 .authorizeRequests()
-                //.anyRequest().authenticated()
-                    .antMatchers("users/*").hasRole("ADMIN")
-                    .antMatchers("exams/*").hasAnyRole("USER","ADMIN")
-                    .antMatchers("subjects/*").hasAnyRole("USER","ADMIN")
+                .anyRequest().authenticated()
                 .and()
                 .httpBasic()
                 .and()
@@ -39,19 +36,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth
                 .inMemoryAuthentication()
-                .withUser("user").password("$2y$12$EXV.8bEP0vcOvOogDGtoSurSAZufiThS6jWZXyRSsRxDL7a0acidm")
-                .authorities("USER")
-                .and().withUser("admin").password("$2y$12$ayJfLMePpAzTSgzcPelC7ewumMdFxDap4FRoCiSImieV8ZiYw0QZ.")
-                .authorities("ADMIN");
-                /*
-                .inMemoryAuthentication()
-                .withUser("admin").password("$2y$12$60CKsVSaNhelRap/TjTVG.w2itoylb3eWILV5DPorOEOQIhGty9J6").roles("ADMIN")
+                .withUser("student").password("$2y$12$pPTmOgnIox6S82f/8RUZ.edBdosnMl/czyjB0HVZIeaerOJXWKwEu").roles("STUDENT")
                 .and()
-                .withUser("user").password("$2y$12$KyTi9ZWN.B5e43qXbQS9W.dPm8ff6QQ/8O7CkZu10pLHHVxuw8E5e").roles("ADMIN");
+                .withUser("admin").password("$2y$12$EdqbUhD74hXZeICLSizOCuLgedKAcOCPBMt15G5SCKv166AfGEwtq").roles("ADMIN");
 
-                 */
+
     }
-
 
 
     @Bean
