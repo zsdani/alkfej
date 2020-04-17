@@ -8,10 +8,10 @@ insert into Building (b_name, floors) values ('Eszaki tomb', 8);
 insert into Building (b_name, floors) values ('PPK Epulet', 9);
 
 
-insert into Subject (name, code, description, credit, building_id, number_Of_Users) values ('Alkalmazások fejlesztése', 'IK01', 'Spring boot és Angular fejlesztés',1, 3, 3);
-insert into Subject (name, code, description, credit, building_id, number_Of_Users) values ('Valószínűségszámítás', 'IK02', 'Beleépítve statisztika',2, 2, 2);
-insert into Subject (name, code, description, credit, building_id, number_Of_Users) values ('Analízis 3.', 'IK03', 'Integrálás', 3, 1, 1);
-insert into Subject (name, code, description, credit, building_id, number_Of_Users) values ('Analízis 1.', 'AN01', 'Deriválás alapjai', 3, 3, 1);
+insert into Subject (name, code, description, credit, building_id) values ('Alkalmazások fejlesztése', 'IK01', 'Spring boot és Angular fejlesztés',1, 3);
+insert into Subject (name, code, description, credit, building_id) values ('Valószínűségszámítás', 'IK02', 'Beleépítve statisztika',2, 2);
+insert into Subject (name, code, description, credit, building_id) values ('Analízis 3.', 'IK03', 'Integrálás', 3, 1);
+insert into Subject (name, code, description, credit, building_id) values ('Analízis 1.', 'AN01', 'Deriválás alapjai', 3, 3);
 
 
 insert into users_subjects (users_id, subjects_id) values (1, 1);

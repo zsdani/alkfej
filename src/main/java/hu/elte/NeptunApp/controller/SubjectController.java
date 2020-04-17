@@ -1,7 +1,6 @@
 package hu.elte.NeptunApp.controller;
 
 
-import hu.elte.NeptunApp.entities.Building;
 import hu.elte.NeptunApp.entities.Subject;
 import hu.elte.NeptunApp.entities.User;
 import hu.elte.NeptunApp.repository.SubjectRepository;
@@ -44,14 +43,11 @@ public class SubjectController {
     public ResponseEntity<Iterable<User>> getAllUsersBySubject(@PathVariable Integer id) {
         Optional<Subject> byId = subjectRepository.findById(id);
         if (byId.isPresent()) {
-            //System.out.println(byId.get().getUsers().size());
             return ResponseEntity.ok(byId.get().getUsers());
         } else {
             return ResponseEntity.notFound().build();
         }
     }
-
-
 
     @PostMapping("")
     public ResponseEntity<Subject> post(@RequestBody Subject subject) {

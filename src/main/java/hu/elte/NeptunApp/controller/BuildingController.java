@@ -51,8 +51,6 @@ public class BuildingController {
     }
 
 
-
-
     @PostMapping("")
     public ResponseEntity<Building> post(@RequestBody Building building) {
         Building savedBuilding = buildingRepository.save(building);
@@ -68,10 +66,7 @@ public class BuildingController {
             building.getSubjectList().add(newSubject);
             buildingRepository.save(building);
             newSubject.setBuilding(building);
-            newSubject.setNumberOfUsers(newSubject.getNumberOfUsers());
             subjectRepository.save(newSubject);
-
-
             return ResponseEntity.ok(building);
         } else {
             return ResponseEntity.notFound().build();
