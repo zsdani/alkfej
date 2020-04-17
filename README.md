@@ -11,7 +11,7 @@ Neptun kód és jelszó beírása után hallgatóként vagy tanárként be tudun
 <p>Diákként:</p>
 <ul>
    <li>meg tudjuk tekinteni az adatainkat.(Név, felvett tárgyak,felvett kredit, saját adatok, stb…)</li>
-   <li>megtekinthetjük a felvett tárgyainkat ahol látható a tárgy kód, végleges jegy, kredit, teljesítette vagy sem</li>
+   <li>megtekinthetjük a felvett tárgyainkat ahol láthatóak a tárgy adatai</li>
    <li>Tárgyakat tudunk felvenni</li>
   <li>Tárgyakat tudunk leadni</li>
 </ul>
@@ -19,10 +19,7 @@ Neptun kód és jelszó beírása után hallgatóként vagy tanárként be tudun
       
 <p>Tanárként:</p>    
 <ul>
-   <li> meg tudjuk tekinteni az adatainkat.(Név, oktatott tárgyak, saját adatok, stb…)</li>
-   <li>beírhat jegyet</li>
-   <li> hozzá tud adni új tárgyat</li>
-  <li>tud törölni tárgyakat (sajátját)</li>
+   <li>létre tud hozni új tárgyat</li>
 </ul>
       
 <p>Vendégként:</p>         
@@ -34,9 +31,11 @@ Neptun kód és jelszó beírása után hallgatóként vagy tanárként be tudun
 
 <ul>
    <li>Belépés</li>
-   <li>tanulók ki listázása tárgyanként</li>
-   <li>saját felvett tárgyak ki listázása</li>
-  <li>saját tanított tárgyak ki listázása</li>
+   <li>tanulók kilistázása tárgyanként</li>
+   <li>összes létező tárgy kilistázása</li>
+   <li>tanuló saját tárgyainak listázása</li>
+   <li>kurzusok listázása épületenként</li>
+   <li>épületek listája</li>
 </ul>
               
 <h3>3. Nem funkcionális elvárások</h3>       
