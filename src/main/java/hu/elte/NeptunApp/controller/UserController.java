@@ -3,10 +3,13 @@ package hu.elte.NeptunApp.controller;
 
 import hu.elte.NeptunApp.entities.Subject;
 import hu.elte.NeptunApp.entities.User;
+import hu.elte.NeptunApp.entities.enums.Role;
 import hu.elte.NeptunApp.repository.SubjectRepository;
 import hu.elte.NeptunApp.repository.UserRepository;
+import hu.elte.NeptunApp.security.AuthenticatedUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
@@ -21,10 +24,17 @@ public class UserController {
     @Autowired
     private SubjectRepository subjectRepository;
 
+    @Autowired
+    private BCryptPasswordEncoder passwordEncoder;
+
+    @Autowired
+    private AuthenticatedUser authenticatedUser;
+
     @GetMapping("")
     public ResponseEntity<Iterable<User>> getAll() {
         return ResponseEntity.ok(userRepository.findAll());
     }
+
 
     @GetMapping("/{id}")
     public ResponseEntity<User> get(@PathVariable Integer id) {
@@ -94,4 +104,28 @@ public class UserController {
             return ResponseEntity.notFound().build();
         }
     }
+
+    @PostMapping("register")
+    public ResponseEntity<User> register(@RequestBody User user) {
+        Optional<User> oUser = userRepository.findByUsername(user.getUsername());
+        if (oUser.isPresent()) {
+            return ResponseEntity.badRequest().build();
+        }
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+
+        user.setRole(Role.STUDENT);
+        return ResponseEntity.ok(userRepository.save(user));
+    }
+
+    /*@PostMapping("login")
+    public ResponseEntity login() {
+        return ResponseEntity.ok(authenticatedUser.getUser());
+    }*/
+
+    /*@PostMapping("login")
+    public ResponseEntity login(@RequestBody User user) {
+        return ResponseEntity.ok().build();
+    }*/
+
+
 }
