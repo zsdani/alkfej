@@ -1,3 +1,4 @@
+
 package hu.elte.NeptunApp.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -47,3 +48,4 @@ public class Subject {
 
 
 }
+
