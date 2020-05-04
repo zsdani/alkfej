@@ -1,3 +1,4 @@
+
 package hu.elte.NeptunApp.entities;
 
 
@@ -52,6 +53,7 @@ public class User {
 
 
 }
+
 
 
 

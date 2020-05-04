@@ -3,6 +3,7 @@ package hu.elte.NeptunApp.controller;
 
 import hu.elte.NeptunApp.entities.Subject;
 import hu.elte.NeptunApp.entities.User;
+
 import hu.elte.NeptunApp.entities.enums.Role;
 import hu.elte.NeptunApp.repository.SubjectRepository;
 import hu.elte.NeptunApp.repository.UserRepository;
@@ -10,6 +11,7 @@ import hu.elte.NeptunApp.security.AuthenticatedUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
@@ -24,11 +26,13 @@ public class UserController {
     @Autowired
     private SubjectRepository subjectRepository;
 
+
     @Autowired
     private BCryptPasswordEncoder passwordEncoder;
 
     @Autowired
     private AuthenticatedUser authenticatedUser;
+
 
     @GetMapping("")
     public ResponseEntity<Iterable<User>> getAll() {
@@ -105,6 +109,7 @@ public class UserController {
         }
     }
 
+
     @PostMapping("register")
     public ResponseEntity<User> register(@RequestBody User user) {
         Optional<User> oUser = userRepository.findByUsername(user.getUsername());
@@ -126,6 +131,7 @@ public class UserController {
     public ResponseEntity login(@RequestBody User user) {
         return ResponseEntity.ok().build();
     }*/
+
 
 
 }
