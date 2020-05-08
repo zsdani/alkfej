@@ -56,17 +56,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .withUser("user").password("$2a$04$YDiv9c./ytEGZQopFfExoOgGlJL6/o0er0K.hiGb5TGKHUL8Ebn..").roles("USER");
     }
 
-
-                .withUser("student").password("$2y$12$pPTmOgnIox6S82f/8RUZ.edBdosnMl/czyjB0HVZIeaerOJXWKwEu").roles("STUDENT")
-                .and()
-                .withUser("admin").password("$2y$12$EdqbUhD74hXZeICLSizOCuLgedKAcOCPBMt15G5SCKv166AfGEwtq").roles("ADMIN");
-
-
+    @Bean
+    public BCryptPasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
     }
-
-
-
-
 
     @Bean
     public CustomBasicAuthenticationEntryPoint getBasicAuthEntryPoint(){
