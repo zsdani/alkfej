@@ -137,7 +137,8 @@ Az alkalmazás Ajax REST API hívásokkal kommunikál a backend-del.
 
 <h3>Egy funkció bemutatása: Tárgy törlése</h3>
 Tantárgyak listáján, az 'Törlés' gomb kattintására törölhetjük az adott tantárgyat:
-![torles](https://user-images.githubusercontent.com/61462292/83327559-0f540e00-a27d-11ea-83fe-5dc82ac08903.png)
+
+![image](https://user-images.githubusercontent.com/61462292/83327595-5215e600-a27d-11ea-9485-ee9e5eefc7d6.png)
     
  
    
