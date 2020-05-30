@@ -121,6 +121,22 @@ Frontend
 
 ![konyvtar](https://user-images.githubusercontent.com/61462292/83324810-11f83880-a268-11ea-8fb7-835013f573cc.png)
 ![konyvtar](https://user-images.githubusercontent.com/61462292/83324874-5f74a580-a268-11ea-9a1a-928761ac7472.png)
+
+
+<h3>Kliensoldali szolgáltatások:</h3>
+<ul>
+   <li>Ajax hívások: az alkalmazás az oldal újratöltése nélkül kommunikál a szerverrel</li>
+   <li>Bejelentkezés: form kitöltése után validáció, sikertelen bejelentkezés esetén oldal elérésének megtagadása</li>
+   <li>Tantárgyak betöltése főoldalon dinamikusan frissülő lista</li>
+   <li>Intuitív működés: Tantárgyak/Épületek törlése, módosítása, felvétele gombnyomásra</li>
+   <li>Kijelentkezés</li>
+</ul>
+
+<h3>Kapcsolat:</h3>
+Az alkalmazás Ajax REST API hívásokkal kommunikál a backend-del.
+
+<h3>Egy funkció bemutatása: Tárgy törlése</h3>
+Tantárgyak listáján, az 'Törlés' gomb kattintására törölhetjük az adott tantárgyat:
     
  
    
