@@ -109,14 +109,18 @@ Használt technológiák: JAVA Spring, hibernate, Maven, H2 Database, Lombok, Sp
 
  <ul>
    <li> Backend: IntelliJ IDEA </li>
+   <li> Backend:  Frontend: Visual Studio Code </li>
 </ul>
     
 <h3>Könyvtárstruktúra:</h3>
-
+Backend
 
 ![konyvtar](https://user-images.githubusercontent.com/47753407/79596229-79a35b80-80e0-11ea-9c95-9946a8226c47.png)
+
+Frontend:
+![konyvtar](https://user-images.githubusercontent.com/61462292/83324810-11f83880-a268-11ea-8fb7-835013f573cc.png)
     
-    
+ 
    
   
    
