@@ -136,9 +136,27 @@ Frontend
 Az alkalmazás Ajax REST API hívásokkal kommunikál a backend-del.
 
 <h3>Egy funkció bemutatása: Tárgy törlése</h3>
-Tantárgyak listáján, az 'Törlés' gomb kattintására törölhetjük az adott tantárgyat:
+Tantárgyak listáján, az 'Töröl' gomb kattintására törölhetjük az adott tantárgyat:
 
 ![image](https://user-images.githubusercontent.com/61462292/83327595-5215e600-a27d-11ea-9485-ee9e5eefc7d6.png)
+
+Folyamat:
+<ol>
+   <li>A tárgy sorába való kattintással meghívjuk a onSelectIssue metódust</li>
+   <li>majd a selectel-t issue-n meghívjuk a onDeleteClick</li>
+   <li>és azonbelül meghívódik a deleteIssuemetódust megvárjuk amíg tőrlődik az issue majd frissítjük az issuelistet.</li>
+   <li>Sikeres service hívás esetén a tantárgyak listája frissül.</li>
+</ol>
+
+<h3>Felhasználói dokumentáció</h3>
+<ul>
+   <li> asdasdsa</li>
+   <li>2 tojás</li>
+   <li>3 <abbr title="deciliter">dl</abbr> tej</li>
+   <li>2 <abbr title="deciliter">dl</abbr> szénsavas ásványvíz</li>
+   <li>1 csipet só</li>
+   <li>3/4 <abbr title="deciliter">dl</abbr> étolaj</li>
+</ul>
     
  
    
