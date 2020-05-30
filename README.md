@@ -150,7 +150,9 @@ Folyamat:
 
 <h3>Felhasználói dokumentáció</h3>
 <ul>
-   <li> asdasdsa</li>
+   <li><b>Bejelentkezés</b> felhasználónév és jelszó segítségével:</li>
+   
+   ![image](https://user-images.githubusercontent.com/61462292/83328396-eafb3000-a282-11ea-9cee-a183521760a6.png)
    <li>2 tojás</li>
    <li>3 <abbr title="deciliter">dl</abbr> tej</li>
    <li>2 <abbr title="deciliter">dl</abbr> szénsavas ásványvíz</li>
