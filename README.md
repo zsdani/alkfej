@@ -109,7 +109,7 @@ Használt technológiák: JAVA Spring, hibernate, Maven, H2 Database, Lombok, Sp
 
  <ul>
    <li> Backend: IntelliJ IDEA </li>
-   <li> Backend:  Frontend: Visual Studio Code </li>
+   <li> Frontend: Visual Studio Code </li>
 </ul>
     
 <h3>Könyvtárstruktúra:</h3>
@@ -158,10 +158,7 @@ Folyamat:
    
    ![image](https://user-images.githubusercontent.com/61462292/83328455-7379d080-a283-11ea-9bd9-b508533e0ea7.png)
    
-   <li>3 <abbr title="deciliter">dl</abbr> tej</li>
-   <li>2 <abbr title="deciliter">dl</abbr> szénsavas ásványvíz</li>
-   <li>1 csipet só</li>
-   <li>3/4 <abbr title="deciliter">dl</abbr> étolaj</li>
+   
 </ul>
     
  
