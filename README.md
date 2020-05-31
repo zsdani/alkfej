@@ -177,6 +177,23 @@ Folyamat:
  
 ![image](https://user-images.githubusercontent.com/61462292/83352745-126aff00-a34e-11ea-82b4-b7e829f413ee.png)
 
+<li>Ha a felhasználó rákattint a helyszín id-re, akkor az oldal elnavigálja az épületek listájához</li>
+
+![image](https://user-images.githubusercontent.com/61462292/83353018-e9e40480-a34f-11ea-8551-b2fd3146920c.png)
+
+<li>A menüben a Felhasználók kezelés-re kattintva <b>tanárként</b> megjelennek a felhasználók és adataik. Törölni is képes a tanár a felhasználókat. <b>Tanulóként</b> erre a manüpontra való kattintással nem történik semmi, mivel ehez a tanulónak nincs joga.</li>
+
+![image](https://user-images.githubusercontent.com/61462292/83352893-15b2ba80-a34f-11ea-954b-86d1536460fa.png)
+
+<li>Épületeknél <b>tanárként</b> úgyan úgy mint a tantárgyaknál tud módosítani/ törölni és újat létrehozni. <b>Diákként</b> csak megtekinteni lehet.</li>
+
+![image](https://user-images.githubusercontent.com/61462292/83352956-7e9a3280-a34f-11ea-80df-90c0e3b0ca2f.png)
+
+<li>Kilpés-re kattintással a bejelentkező oldalra navigál a weboldal</li>
+
+![image](https://user-images.githubusercontent.com/61462292/83353057-26176500-a350-11ea-97e2-275dc9aa8d21.png)
+
+
  
 </ul>
     
