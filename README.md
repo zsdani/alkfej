@@ -159,7 +159,25 @@ Folyamat:
    
    ![image](https://user-images.githubusercontent.com/61462292/83351065-307e3280-a341-11ea-9b6f-87cf4c00d831.png)
    
+   <li><b>Főoldal:</b> 
+      <ol>
+         <li>Tanulóként megjelenik a felvehető tárgyak a listája. A lista elemek a jobb oldali 'Hozzá ad' gombbal lehetne hozzá adni a             tárgyainkhoz.</li>
+         
+   ![image](https://user-images.githubusercontent.com/61462292/83352400-5e687480-a34b-11ea-8654-7aadd89dddfc.png)
    
+         
+   <li>Tanárként megjelenik bal felül egy "Új tárgy" gomb, illetve a "Hozzá ad" helyett "Törlés" gomb jelenik meg. Törlés gomb működik és tanárként ki lehet törölni tárgyakat. Az új tárgy gomb megnyomásával, let megjelenik egy form amit ha helyesen tölt ki a tanár, akkor képes menteni és a listában meg is jelenik az új tárgy. Módosítani is lehet a tárgyat, ezt pedig tárgy mellé kattintásval lehet elérni, ilyenkor is lent megjelenik a form és a megfelelő mezők be it töltődnke.  </li>
+ 
+ ![image](https://user-images.githubusercontent.com/61462292/83352641-41cd3c00-a34d-11ea-99fd-fb7a1cf05cfe.png)
+</ol>
+   
+   
+   
+ <li>A tárgy nevére való kattintással a felhasználót elnavigálja a weboldal egy új oldalra, ahol megtekintheti részletesen a tárgy jellemzőit</li>
+ 
+![image](https://user-images.githubusercontent.com/61462292/83352745-126aff00-a34e-11ea-82b4-b7e829f413ee.png)
+
+ 
 </ul>
     
  
