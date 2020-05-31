@@ -166,7 +166,7 @@ Folyamat:
    ![image](https://user-images.githubusercontent.com/61462292/83352400-5e687480-a34b-11ea-8654-7aadd89dddfc.png)
    
          
-   <li>Tanárként megjelenik bal felül egy "Új tárgy" gomb, illetve a "Hozzá ad" helyett "Törlés" gomb jelenik meg. Törlés gomb működik és tanárként ki lehet törölni tárgyakat. Az új tárgy gomb megnyomásával, let megjelenik egy form amit ha helyesen tölt ki a tanár, akkor képes menteni és a listában meg is jelenik az új tárgy. Módosítani is lehet a tárgyat, ezt pedig tárgy mellé kattintásval lehet elérni, ilyenkor is lent megjelenik a form és a megfelelő mezők be it töltődnke.  </li>
+   <li>Tanárként megjelenik bal felül egy "Új tárgy" gomb, illetve a "Hozzá ad" helyett "Törlés" gomb jelenik meg. Törlés gomb működik és tanárként ki lehet törölni tárgyakat. Az új tárgy gomb megnyomásával, let megjelenik egy form amit ha helyesen tölt ki a tanár, akkor képes menteni és a listában meg is jelenik az új tárgy. Módosítani is lehet a tárgyat, ezt pedig tárgy mellé kattintásval lehet elérni, ilyenkor is lent megjelenik a form és a megfelelő mezők be it töltődnek.  </li>
  
  ![image](https://user-images.githubusercontent.com/61462292/83352641-41cd3c00-a34d-11ea-99fd-fb7a1cf05cfe.png)
 </ol>
