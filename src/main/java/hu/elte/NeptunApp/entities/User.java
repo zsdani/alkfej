@@ -48,7 +48,7 @@ public class User {
         private List<Subject> subjects;
 
         public void removeSubject(Subject subject) {
-            this.subjects.remove(subject);
+                this.subjects.remove(subject);
         }
 
 

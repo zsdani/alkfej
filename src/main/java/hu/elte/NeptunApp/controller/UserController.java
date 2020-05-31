@@ -122,10 +122,10 @@ public class UserController {
         return ResponseEntity.ok(userRepository.save(user));
     }
 
-    /*@PostMapping("login")
+    @PostMapping("login")
     public ResponseEntity login() {
         return ResponseEntity.ok(authenticatedUser.getUser());
-    }*/
+    }
 
     /*@PostMapping("login")
     public ResponseEntity login(@RequestBody User user) {

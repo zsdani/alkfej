@@ -30,6 +30,9 @@ public class Building {
     @Column(nullable = false)
     private Integer floors;
 
+    @Column(nullable = false)
+    private Integer room;
+
     @OneToMany(mappedBy = "building", targetEntity = Subject.class, cascade = CascadeType.ALL)
     private List<Subject> subjectList;
 

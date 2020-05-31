@@ -35,6 +35,14 @@ public class Subject {
     @Column(nullable = false)
     private Integer credit;
 
+    @Column(nullable = false)
+    private Integer buildingid;
+
+
+    @Column(nullable = false)
+    private String status;
+
+
     @ManyToMany(mappedBy = "subjects")
     @JsonIgnore
     private List<User> users;
