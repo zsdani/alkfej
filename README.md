@@ -99,7 +99,7 @@ Neptun kód és jelszó beírása után hallgatóként vagy adminként be tudunk
 <h3>Szekvencia diagram</h3>
 
 
-![neptunapp](https://user-images.githubusercontent.com/47753407/79596514-0221fc00-80e1-11ea-93fe-890b7932fecb.png)
+![image](https://user-images.githubusercontent.com/61462292/83352222-5956f580-a34a-11ea-91f6-d6f979b2c953.png)
 
 
 
@@ -119,8 +119,8 @@ Backend
 
 Frontend
 
-![konyvtar](https://user-images.githubusercontent.com/61462292/83324810-11f83880-a268-11ea-8fb7-835013f573cc.png)
-![konyvtar](https://user-images.githubusercontent.com/61462292/83324874-5f74a580-a268-11ea-9a1a-928761ac7472.png)
+![image](https://user-images.githubusercontent.com/61462292/83350940-08da9a80-a340-11ea-908e-0c52f5881d8c.png)
+![image](https://user-images.githubusercontent.com/61462292/83350954-2d367700-a340-11ea-865a-0b7c6dac472e.png)
 
 
 <h3>Kliensoldali szolgáltatások:</h3>
@@ -129,6 +129,7 @@ Frontend
    <li>Bejelentkezés: form kitöltése után validáció, sikertelen bejelentkezés esetén oldal elérésének megtagadása</li>
    <li>Tantárgyak betöltése főoldalon dinamikusan frissülő lista</li>
    <li>Intuitív működés: Tantárgyak/Épületek törlése, módosítása, felvétele gombnyomásra</li>
+   <li>Intuitív működés: Személyek törlése gombnyomásra</li>
    <li>Kijelentkezés</li>
 </ul>
 
@@ -136,7 +137,7 @@ Frontend
 Az alkalmazás Ajax REST API hívásokkal kommunikál a backend-del.
 
 <h3>Egy funkció bemutatása: Tárgy törlése</h3>
-Tantárgyak listáján, az 'Töröl' gomb kattintására törölhetjük az adott tantárgyat:
+Tantárgyak listáján, a 'Töröl' gomb kattintására törölhetjük az adott tantárgyat tanárként:
 
 ![image](https://user-images.githubusercontent.com/61462292/83327595-5215e600-a27d-11ea-9485-ee9e5eefc7d6.png)
 
@@ -156,7 +157,7 @@ Folyamat:
    
    <li><b>Navigációs sáv</b>: tartalmazza az egyes menüpontokat és a kijelentkezés gombot.</li>
    
-   ![image](https://user-images.githubusercontent.com/61462292/83328455-7379d080-a283-11ea-9bd9-b508533e0ea7.png)
+   ![image](https://user-images.githubusercontent.com/61462292/83351065-307e3280-a341-11ea-9b6f-87cf4c00d831.png)
    
    
 </ul>
